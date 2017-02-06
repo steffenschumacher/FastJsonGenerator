@@ -410,6 +410,7 @@ public class FastJsonGenerator implements javax.json.stream.JsonGenerator {
                 System.arraycopy(chars, strPos, buf, pos, copyLen);
                 strPos += copyLen;
                 remaining -= copyLen;
+                pos += copyLen;
             }
             addSingleByte(C_QUOTE);
         }
